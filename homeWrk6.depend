@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1509535443 source:c:\c+\homewrk6\main.cpp
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<string.h>
+
