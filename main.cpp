@@ -42,7 +42,6 @@ char* memLetter;                            //init memory for array
             continue;
         }
     }
-    free(memLetter);
 }
 
 
@@ -92,8 +91,9 @@ int verifyMalloc (int sizeMalloc){                          //function verify me
     char* memLetter;
 
     memLetter = (char*)malloc(sizeMalloc*sizeof(char));
-    if ((char*)malloc(sizeMalloc*sizeof(char))== NULL) {
+    if (memLetter== NULL) {
         printf ("Memory allocation error...");
         return 1;
     }
+    free(memLetter);
 }
